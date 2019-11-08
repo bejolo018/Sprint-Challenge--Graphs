@@ -22,7 +22,7 @@ player = Player("Name", world.startingRoom)
 
 # FILL THIS IN
 traversalPath = ['n', 's']
-
+# Write an algorithm that picks a random unexplored direction from the player's current room, travels and logs that direction, then loops.
 
 # TRAVERSAL TEST
 visited_rooms = set()
