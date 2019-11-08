@@ -21,8 +21,21 @@ player = Player("Name", world.startingRoom)
 
 
 # FILL THIS IN
-traversalPath = ['n', 's']
 # Write an algorithm that picks a random unexplored direction from the player's current room, travels and logs that direction, then loops.
+traversalPath = []
+
+backwardsDirections = {'n': 's', 's': 'n', 'e': 'w', 'w': 'e'}
+
+reversePath = [None]
+
+rooms = {}
+
+roomsdict = {}
+
+rooms[0] = player.currentRoom.getExits()
+
+roomsdict[0] = player.currentRoom.getExits()
+
 
 # TRAVERSAL TEST
 visited_rooms = set()
